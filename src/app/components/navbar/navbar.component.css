@@ -1,0 +1,13 @@
+.navbar {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+.navbar a {
+  padding: 0 1em;
+  color: aliceblue;
+  margin: 1em;
+  text-decoration: none;
+}
