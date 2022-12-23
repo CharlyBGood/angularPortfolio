@@ -1,4 +1,16 @@
-<nav class="navbar">
-  <a href="#!">Inicio</a>
-  <a href="#!" (click)="onClick()" >Contactos</a>
+<header class="border border-dark border-3 rounded m-1 header p-2">
+<nav class="navbar align-items-start">
+  <div class="d-flex flex-column">
+    <img
+      class="img-fluid img-header"
+      src="../assets/argprog.png"
+      alt="logo de argentina programa"
+    />
+    <h6 class="text-white">Argentina Programa</h6>
+    <h6 class="text-white">// #YoProgramo</h6>
+  </div>
+  <div class="navbar-right">
+    <button (click)="onClick()" class="btn btn-primary">Login</button>
+  </div>
 </nav>
+</header>
