@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+div {
+  color: wheat;
+}

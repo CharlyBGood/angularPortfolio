@@ -1,0 +1,43 @@
+<div class="form">
+  <div>
+    <div>
+      Nombre:
+      <input 
+        placeholder="Ingrese su nombre" 
+        type="text" 
+        [(ngModel)]="nombre" />
+    </div>
+    <br />
+    <div>
+      Teléfono:
+      <input
+        placeholder="ingrese su telefono"
+        type="number"
+        [ngModel]="telefono"
+      />
+    </div>
+    <br />
+    <div>
+      DNI:
+      <input
+        placeholder="ingrese su dni"
+        type="number"
+        [ngModel]="dni"
+        (ngModelChange)="cambiaDni($event)"
+      />
+    </div>
+  </div>
+  <br />
+  <div>
+    Tú nombre es: <b>{{nombre}}</b> y tiene {{nombre.length}} <b>letras</b>,
+    esto es mágia.
+  </div>
+  <br />
+  <div>
+    Tú telefono es: <b>{{telefono}}</b> y tiene {{telefono.length}}
+    <b>digitos</b>.
+  </div>
+  <br />
+  <div>Tú dni es: <b>{{dni}}</b></div>
+  <br/>
+</div>
