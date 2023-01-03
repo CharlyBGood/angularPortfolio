@@ -1,10 +1,23 @@
-<div class="card border-1 m-1 p-4 ">
-  <h1 class="card-text">{{titleOne}}</h1>
+<div class="card border-1 m-1 p-4">
+  <div class="btn-edit d-flex align-items-center justify-content-between">
+    <h2 class="card-text">{{ titleOne }}</h2>
+    <a href="#" class="btn-right text-black">
+      <fa-icon [icon]="faPen"></fa-icon>
+    </a>
+  </div>
   <p class="card-text">
-    {{contentOne}}
+    {{ contentOne }}
   </p>
 </div>
 <div class="card border-1 m-1 p-4">
-  <h4 class="card-text">{{titleTwo}}</h4>
-  <p>{{contentTwo}}</p>
-</div>    
+  <div class="btn-edit d-flex align-items-center justify-content-between">
+    <h2 class="card-text">{{ titleTwo }}</h2>
+    <a href="#" class="btn-right text-black">
+      <div class="d-flex flex-column">
+        <fa-icon [icon]="faPlus" class="p-1 mb-2"></fa-icon>
+        <fa-icon [icon]="faPen"></fa-icon>
+      </div>
+    </a>
+  </div>
+  <p class="card-text">{{ contentTwo }}</p>
+</div>

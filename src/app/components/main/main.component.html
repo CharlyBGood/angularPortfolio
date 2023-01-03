@@ -4,13 +4,23 @@
   <div
     class="card-body text-center d-flex flex-column align-items-center w-full"
   >
-    <img
-      class="navbar-img img-fluid rounded-circle"
-      src="../assets/charlybgood.jpg"
-      alt=""
-    />
-    <h3 class="card-title">{{title}}</h3>
+    <div class="btn-edit d-flex">
+      <img
+        class="profile-img img-fluid rounded-circle"
+        src="../assets/charlybgood.jpg"
+        alt=""
+      />
+      <a href="#" class="btn-right d-flex align-self-end text-black m-0">
+        <fa-icon [icon]="faPen"></fa-icon>
+      </a>
+    </div>
+    <h3 class="card-title">{{ title }}</h3>
     <h6 class="card-text">Desarrollador Fullstack jr.</h6>
-    <p class="card-text">Buenos Aires (Argentina)</p>
+    <p class="card-text">{{ city }}</p>
+
+    <a href="#">Información de contacto</a>
+    <button class="btn btn-primary" (onclick)="onClick()">
+      Tengo interés en...
+    </button>
   </div>
 </div>

@@ -5,7 +5,12 @@
   /* left: 11%; */
 }
 
-.navbar-img {
+.profile-img {
   width: 8em;
   /* border-radius: 33em; */
+}
+
+.card-body a {
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
