@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-main',
@@ -11,17 +12,18 @@ export class MainComponent implements OnInit {
   city: string = 'Buenos Aires (Argentina)';
 
   faPen = faPen;
-  
+
   onClick() {
     alert('vas a iniciar sesión');
-  } 
-
-  editProfile() {
-    alert("vas a editar el perfil!")
   }
 
+  editProfile() {
+    alert('vas a editar el perfil!');
+  }
 
+  constructor(private datosPortfolio: PortfolioService) {}
 
-  constructor() {}
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.datosPortfolio.getData();
+  }
 }
