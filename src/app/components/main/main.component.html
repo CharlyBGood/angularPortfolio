@@ -19,8 +19,27 @@
     <p class="card-text">{{ city }}</p>
 
     <a href="#">Información de contacto</a>
-    <button class="btn btn-primary" (onclick)="onClick()">
-      Tengo interés en...
-    </button>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-primary" (onclick)="onClick()">
+        Tengo interés en...
+      </button>
+      <a href="#" class="mb-0 text-black" style="margin-left: 1em;">Añadir Sección</a>
+    </div>
+  </div>
+  <div
+    class="card-body text-center d-flex flex-column align-items-center"
+  >
+    <div class="btn-edit d-flex">
+      <img
+        class="creativecommons img-fluid rounded-circle"
+        src="../assets/creativecommons.jpg"
+        alt=""
+      />
+      <a href="#" class="btn-right d-flex align-self-end text-black m-0">
+        <fa-icon [icon]="faPen"></fa-icon>
+      </a>
+    </div>
+    <h6 class="card-text">Argentina Programa</h6>
+    <p class="card-text">Ministerio de desarrollo de la Nación Argentina</p>
   </div>
 </div>
