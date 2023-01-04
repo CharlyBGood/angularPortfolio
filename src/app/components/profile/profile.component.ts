@@ -16,6 +16,9 @@ export class ProfileComponent {
   contentTwo =
     'Html, css, javascript, nodejs, express, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, expedita ut, eos maxime ipsa numquam fugiat, reprehenderit facere repudiandae quaerat tenetur voluptate inventore odio voluptatem assumenda illum neque ex eaque.';
 
+  titleThree = 'Experiencia';
+  contentThree = 'CENS 18 - Perito Mercantil en Adm. de Empresas';
+
   // Font Awesome Icons
   faPen = faPen;
   faPlus = faPlus;

@@ -9,10 +9,16 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class NavbarComponent {
   firstLogoSrc = '../assets/argprog.png';
   navTitleOne = 'Argentina Programa';
-  navTitleTwo = "// #YoProgramo"
+  navTitleTwo = '// #YoProgramo';
 
   onClick() {
-    alert('vas a iniciar sesión');
+    if (
+      confirm(
+        'Haz una cuenta para crear tu propia versión de este portfolio/CV'
+      )
+    ) {
+      alert('Ingresa un email y crea una contraseña para continuar');
+    }
   }
 
   constructor(private modalService: NgbModal) {}
