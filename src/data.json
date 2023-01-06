@@ -1,6 +1,9 @@
 {
   "backImage": "",
-  "navLogo": "",
+  "navLogo": "https://angular-portfolio-mu.vercel.app/assets/argprog.png",
+  "navTitle":"Argentina Programa",
+  "navTitle2":"// #YoProgramo",
+  "profileImg": "https://angular-portfolio-mu.vercel.app/assets/charlybgood.jpg",
   "name": "Carlos Bonavita",
   "position": "Desarrollador Fullstack jr",
   "location": "Buenos Aires (Argentina)",
