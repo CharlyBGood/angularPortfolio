@@ -1,6 +1,9 @@
-<footer>
+<footer class="d-flex w-100 align-items-center justify-content-center">
   <p>
-    by
-    <a href="https://github.com/CharlyBGood" target="_BLANK">Charly BGood</a>
+    {{ myPortfolio.footerText }}
   </p>
+  <a [href]="myPortfolio.footerHREF" target="_BLANK"
+    >{{ myPortfolio.footerLinkText }}
+    <fa-icon class="text-muted" [icon]="faExternalLink"></fa-icon>
+  </a>
 </footer>

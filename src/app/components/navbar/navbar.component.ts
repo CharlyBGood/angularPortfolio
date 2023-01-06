@@ -23,7 +23,10 @@ export class NavbarComponent {
     }
   }
 
-  constructor(private modalService: NgbModal, private datosPortfolio: PortfolioService) {}
+  constructor(
+    private modalService: NgbModal,
+    private datosPortfolio: PortfolioService
+  ) {}
 
   public open(modal: any): void {
     this.modalService.open(modal);

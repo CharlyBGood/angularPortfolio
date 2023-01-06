@@ -15,5 +15,8 @@
   "experience":"Html, css, javascript, nodejs, express, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, expedita ut, eos maxime ipsa numquam fugiat, reprehenderit facere repudiandae quaerat tenetur voluptate inventore odio voluptatem assumenda illum neque ex eaque.",
   "educationTitle": "Educación",
   "education": "CENS 18 - Perito Mercantil en Adm. de Empresas",
-  "educationDate": "2013 - 2015"
+  "educationDate": "2013 - 2015",
+  "footerText": "website by",
+  "footerLinkText": "Charly BGood",
+  "footerHREF": "https://github.com/CharlyBGood"
 }

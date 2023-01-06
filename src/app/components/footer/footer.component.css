@@ -11,7 +11,12 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #ada7a7;
+  color: #555666;
+  transition: 1s;
+}
+
+footer a:hover {
+  font-size: 1.2em;
 }
 
 footer p {

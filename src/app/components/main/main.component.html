@@ -7,7 +7,7 @@
     <div class="btn-edit d-flex">
       <img
         class="profile-img img-fluid rounded-circle"
-        src={{myPortfolio.profileImg}}
+        [src]="myPortfolio.profileImg"
         alt="profile pic"
       />
       <a href="#" class="btn-right d-flex align-self-end text-black m-0">
@@ -25,7 +25,7 @@
     <div class="btn-edit d-flex">
       <img
         class="institution img-fluid"
-        src="{{ myPortfolio.institutionImg }}"
+        [src]="myPortfolio.institutionImg"
         alt="ministerio de Economía"
       />
       <a href="#" class="btn-right d-flex align-self-end text-black m-0">
