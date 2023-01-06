@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  myPortfolio: any;
   firstLogoSrc = '../assets/argprog.png';
   navTitleOne = 'Argentina Programa';
   navTitleTwo = '// #YoProgramo';
@@ -21,11 +23,16 @@ export class NavbarComponent {
     }
   }
 
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal, private datosPortfolio: PortfolioService) {}
 
   public open(modal: any): void {
     this.modalService.open(modal);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.datosPortfolio.getData().subscribe((data) => {
+      console.log(data);
+      this.myPortfolio = data;
+    });
+  }
 }

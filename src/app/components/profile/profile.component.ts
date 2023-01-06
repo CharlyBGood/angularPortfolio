@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faPen } from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,21 +9,27 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent {
-  titleOne = 'Acerca de';
+  myPortfolio: any;
+  titleOne = 'prueba acerca de';
   contentOne =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi dignissimos voluptatum vitae provident eaque repudiandae itaque a recusandae laboriosam perspiciatis repellendus, sed delectus porro dolor consequatur quidem dolores aperiam?';
+    'Aca va el acerca de';
 
-  titleTwo = 'Experiencia';
+  titleTwo = 'prueba experiencia';
   contentTwo =
-    'Html, css, javascript, nodejs, express, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, expedita ut, eos maxime ipsa numquam fugiat, reprehenderit facere repudiandae quaerat tenetur voluptate inventore odio voluptatem assumenda illum neque ex eaque.';
+    'aca va la experiencia y ta';
 
-  titleThree = 'Educación';
-  contentThree = 'CENS 18 - Perito Mercantil en Adm. de Empresas';
+  titleThree = 'prueba educación';
+  contentThree = 'aca va la educación si, si';
 
   // Font Awesome Icons
   faPen = faPen;
   faPlus = faPlus;
 
-  constructor() {}
-  ngOnInit(): void {}
+  constructor(private datosPortfolio: PortfolioService) {}
+  ngOnInit(): void {
+    this.datosPortfolio.getData().subscribe((data) => {
+      console.log(data);
+      this.myPortfolio = data;
+    });
+  }
 }

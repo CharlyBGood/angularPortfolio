@@ -8,8 +8,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   styleUrls: ['./main.component.css'],
 })
 export class MainComponent implements OnInit {
-  title: string = 'Carlos Bonavita';
-  city: string = 'Buenos Aires (Argentina)';
+  myPortfolio: any;
+  title: string = 'Rodolfo Gomez';
+  city: string = 'Abi abi (Arabia Saudi)';
 
   faPen = faPen;
 
@@ -22,12 +23,15 @@ export class MainComponent implements OnInit {
   }
 
   tryMakeIt() {
-    alert("si funciona ahora")
+    alert('si funciona ahora');
   }
 
   constructor(private datosPortfolio: PortfolioService) {}
 
   ngOnInit(): void {
-    this.datosPortfolio.getData();
+    this.datosPortfolio.getData().subscribe((data) => {
+      console.log(data);
+      this.myPortfolio = data;
+    });
   }
 }

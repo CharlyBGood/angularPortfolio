@@ -7,32 +7,30 @@
     <div class="btn-edit d-flex">
       <img
         class="profile-img img-fluid rounded-circle"
-        src="../assets/charlybgood.jpg"
-        alt=""
+        src={{myPortfolio.profileImg}}
+        alt="profile pic"
       />
       <a href="#" class="btn-right d-flex align-self-end text-black m-0">
         <fa-icon [icon]="faPen"></fa-icon>
       </a>
     </div>
-    <h3 class="card-title">{{ title }}</h3>
-    <h6 class="card-text">Desarrollador Fullstack jr.</h6>
-    <p class="card-text">{{ city }}</p>
+    <h3 class="card-title">{{ myPortfolio.name }}</h3>
+    <h6 class="card-text">{{ myPortfolio.position }}</h6>
+    <p class="card-text">{{ myPortfolio.location }}</p>
 
     <a href="#">Información de contacto</a>
-    
   </div>
   <div class="card-body text-center d-flex flex-column align-items-center">
-    <p class="card-text small w-50 m-0">Con el apoyo de</p>
-    <div class="btn-edit d-flex">      
+    <p class="card-text small w-50 m-0">{{ myPortfolio.institutionText }}</p>
+    <div class="btn-edit d-flex">
       <img
         class="institution img-fluid"
-        src="https://www.argentina.gob.ar/sites/default/files/min_economia.png"
+        src="{{ myPortfolio.institutionImg }}"
         alt="ministerio de Economía"
       />
       <a href="#" class="btn-right d-flex align-self-end text-black m-0">
         <fa-icon [icon]="faPen"></fa-icon>
       </a>
     </div>
-    <!-- <p class="card-text small w-50 m-0">Ministerio de Economía, Argentina</p> -->
   </div>
 </header>

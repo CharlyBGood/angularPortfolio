@@ -1,18 +1,18 @@
 <div class="vh-100">
   <div class="card bg-transparent border-1 m-1 p-4">
     <div class="btn-edit d-flex align-items-center justify-content-between">
-      <h2 class="card-text">{{ titleOne }}</h2>
+      <h2 class="card-text">{{ myPortfolio.aboutTitle }}</h2>
       <a href="#" class="btn-right text-black">
         <fa-icon [icon]="faPen"></fa-icon>
       </a>
     </div>
     <p class="card-text">
-      {{ contentOne }}
+      {{ myPortfolio.about }}
     </p>
   </div>
   <div class="card bg-transparent border-1 m-1 p-4">
     <div class="btn-edit d-flex align-items-center justify-content-between">
-      <h2 class="card-text">{{ titleTwo }}</h2>
+      <h2 class="card-text">{{ myPortfolio.experienceTitle }}</h2>
       <a href="#" class="btn-right text-black">
         <div class="d-flex flex-column">
           <fa-icon [icon]="faPlus" class="p-1 mb-2"></fa-icon>
@@ -20,16 +20,16 @@
         </div>
       </a>
     </div>
-    <p class="card-text">{{ contentTwo }}</p>
+    <p class="card-text">{{ myPortfolio.experience }}</p>
   </div>
   <div class="card bg-transparent border-1 m-1 p-4">
     <div class="btn-edit d-flex align-items-center justify-content-between">
-      <h2 class="card-text">{{ titleThree }}</h2>
+      <h2 class="card-text">{{ myPortfolio.educationTitle}}</h2>
       <a href="#" class="btn-right text-black">
         <fa-icon [icon]="faPen"></fa-icon>
       </a>
     </div>
-    <p>{{ contentThree }}</p>
-    <span class="small text-muted">2013 - 2015</span>
+    <p>{{ myPortfolio.education }}</p>
+    <span class="small text-muted">{{ myPortfolio.educationDate }}</span>
   </div>
 </div>

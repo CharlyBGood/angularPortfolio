@@ -1,14 +1,19 @@
 {
   "backImage": "",
-  "navLogo": "https://angular-portfolio-mu.vercel.app/assets/argprog.png",
+  "navLogo": "/assets/img/argprog.png",
   "navTitle":"Argentina Programa",
   "navTitle2":"// #YoProgramo",
-  "profileImg": "https://angular-portfolio-mu.vercel.app/assets/charlybgood.jpg",
+  "profileImg": "/assets/img/charlybgood.jpg",
   "name": "Carlos Bonavita",
   "position": "Desarrollador Fullstack jr",
   "location": "Buenos Aires (Argentina)",
   "institutionImg": "https://www.argentina.gob.ar/sites/default/files/min_economia.png",
+  "institutionText": "Con el apoyo de",
+  "aboutTitle": "Acerca de",
   "about":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi dignissimos voluptatum vitae provident eaque repudiandae itaque a recusandae laboriosam perspiciatis repellendus, sed delectus porro dolor consequatur quidem dolores aperiam?",
+  "experienceTitle": "Experiencia",
   "experience":"Html, css, javascript, nodejs, express, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, expedita ut, eos maxime ipsa numquam fugiat, reprehenderit facere repudiandae quaerat tenetur voluptate inventore odio voluptatem assumenda illum neque ex eaque.",
-  "education": "CENS 18 - Perito Mercantil en Adm. de Empresas"
+  "educationTitle": "Educación",
+  "education": "CENS 18 - Perito Mercantil en Adm. de Empresas",
+  "educationDate": "2013 - 2015"
 }
