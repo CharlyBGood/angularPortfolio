@@ -19,24 +19,22 @@
     <p class="card-text">{{ city }}</p>
 
     <a href="#">Información de contacto</a>
-    <button class="btn btn-primary" (onclick)="onClick()">
+    <button class="btn btn-primary" (click)="tryMakeIt()">
       Tengo interés en...
     </button>
   </div>
   <div class="card-body text-center d-flex flex-column align-items-center">
-    <div class="btn-edit d-flex">
+    <p class="card-text small w-50 m-0">Con el apoyo de</p>
+    <div class="btn-edit d-flex">      
       <img
-        class="creativecommons img-fluid rounded-circle"
-        src="../assets/creativecommons.jpg"
-        alt=""
+        class="institution img-fluid"
+        src="https://www.argentina.gob.ar/sites/default/files/min_economia.png"
+        alt="ministerio de Economía"
       />
       <a href="#" class="btn-right d-flex align-self-end text-black m-0">
         <fa-icon [icon]="faPen"></fa-icon>
       </a>
     </div>
-    <h6 class="card-text">Argentina Programa</h6>
-    <p class="card-text small w-50">
-      Ministerio de desarrollo de la Nación Argentina
-    </p>
+    <!-- <p class="card-text small w-50 m-0">Ministerio de Economía, Argentina</p> -->
   </div>
 </header>

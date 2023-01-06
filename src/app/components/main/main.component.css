@@ -1,7 +1,7 @@
 .header {
   /* position: absolute; */
   width: 100%;
-  top: 21vh; 
+  bottom: 15vh; 
   /* z-index: 10; */
 }
 
@@ -11,8 +11,12 @@
   /* border-radius: 33em; */
 }
 
-.creativecommons {
+/* .creativecommons {
   width: 3em;
+} */
+
+.institution {
+  width: 11em;
 }
 
 .card-body a {

@@ -21,6 +21,10 @@ export class MainComponent implements OnInit {
     alert('vas a editar el perfil!');
   }
 
+  tryMakeIt() {
+    alert("si funciona ahora")
+  }
+
   constructor(private datosPortfolio: PortfolioService) {}
 
   ngOnInit(): void {

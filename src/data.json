@@ -1,0 +1,11 @@
+{
+  "backImage": "",
+  "navLogo": "",
+  "name": "Carlos Bonavita",
+  "position": "Desarrollador Fullstack jr",
+  "location": "Buenos Aires (Argentina)",
+  "institutionImg": "https://www.argentina.gob.ar/sites/default/files/min_economia.png",
+  "about":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi dignissimos voluptatum vitae provident eaque repudiandae itaque a recusandae laboriosam perspiciatis repellendus, sed delectus porro dolor consequatur quidem dolores aperiam?",
+  "experience":"Html, css, javascript, nodejs, express, Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, expedita ut, eos maxime ipsa numquam fugiat, reprehenderit facere repudiandae quaerat tenetur voluptate inventore odio voluptatem assumenda illum neque ex eaque.",
+  "education": "CENS 18 - Perito Mercantil en Adm. de Empresas"
+}
