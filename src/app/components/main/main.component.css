@@ -1,12 +1,13 @@
-.profile-info {
-  /* position: fixed; */
+.header {
+  /* position: absolute; */
   width: 100%;
-  /* bottom: 17vh; */
-  /* left: 11%; */
+  top: 21vh; 
+  /* z-index: 10; */
 }
 
 .profile-img {
-  width: 8em;
+  width: 11em;
+  z-index: 10;
   /* border-radius: 33em; */
 }
 

@@ -1,6 +1,6 @@
-<header class="border border-dark border-3 rounded m-1 header p-2">
+<div class="border container-fluid border-dark border-3 rounded m-1 nav-container p-2">
 <nav class="navbar align-items-start">
-  <div class="d-flex flex-column">
+  <div class="d-flex p-2 flex-column">
     <img
       class="img-fluid img-header"
       src={{firstLogoSrc}}
@@ -9,9 +9,6 @@
     <h6 class="text-white small">{{navTitleOne}}</h6>
     <h6 class="text-white small">{{navTitleTwo}}</h6>
   </div>
-  <div class="d-flex flex-column align-items-end">
-    <button (click)="onClick()" class="btn btn-primary">Crear</button>
-    
-  </div>
+  <button (click)="onClick()" class="btn btn-primary">Crear</button>
 </nav>
-</header>
+</div>
