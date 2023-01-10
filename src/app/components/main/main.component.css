@@ -16,7 +16,8 @@
 } */
 
 .institution {
-  width: 11em;
+  width: 5em;
+  border-radius: 100%;
 }
 
 .card-body a {
