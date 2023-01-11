@@ -10,14 +10,6 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class ProfileComponent {
   myPortfolio: any;
-  titleOne = 'prueba acerca de';
-  contentOne = 'Aca va el acerca de';
-
-  titleTwo = 'prueba experiencia';
-  contentTwo = 'aca va la experiencia y ta';
-
-  titleThree = 'prueba educación';
-  contentThree = 'aca va la educación si, si';
 
   // Font Awesome Icons
   faPen = faPen;
